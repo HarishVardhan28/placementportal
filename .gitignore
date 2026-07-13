@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+instance/
+backend/instance/
+migrate_db.py
+fix_db.py
+update_interviews.py
+migrate_interview_rounds.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Celery
+celerybeat-schedule*
+celerybeat.pid
+celerybeat-schedule-shm
+celerybeat-schedule-wal
+
+# Redis
+dump.rdb
+*.rdb
+
+# Logs
+*.log
+
+# Uploads
+uploads/
+backend/uploads/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
