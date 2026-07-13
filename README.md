@@ -32,16 +32,16 @@ A web application for managing campus placement activities. Three roles — Admi
 - Backend: Flask, SQLAlchemy, JWT
 - Frontend: Vue.js 3 (CDN), Bootstrap 5
 - Database: SQLite
-- Background jobs: Celery + Redis (Memurai on Windows)
+- Background jobs: Celery + Redis (Redis for Windows)
 
 ## Running the project
 
-This project uses Memurai as the Redis server on Windows. Everything can be started with a single script.
+This project uses Redis for Windows as the Redis server. Everything can be started with a single script.
 
 ### Prerequisites
 
 - Python 3.8+
-- Memurai installed (acts as Redis on Windows)
+- Redis for Windows installed at `C:\Program Files\Redis\`
 - pip dependencies installed
 
 ### Install dependencies
@@ -61,7 +61,7 @@ START_ALL.bat
 
 This does the following in order:
 
-1. Starts Memurai (Redis) on port 6380
+1. Starts Redis server on port 6380
 2. Starts the Flask backend at `http://localhost:5000`
 3. Starts the Celery worker (solo pool, single concurrency)
 4. Starts Celery Beat for scheduled tasks
@@ -70,7 +70,7 @@ This does the following in order:
 If you want to start things manually instead:
 
 ```
-memurai --port 6380
+"C:\Program Files\Redis\redis-server.exe" --port 6380
 ```
 
 ```
@@ -80,13 +80,13 @@ python app.py
 
 ```
 cd backend
-set PYTHONPATH=d:\mad22\placement-portal\backend
+set PYTHONPATH=e:\projects\placementportal\backend
 celery -A tasks worker --loglevel=info --pool=solo --concurrency=1
 ```
 
 ```
 cd backend
-set PYTHONPATH=d:\mad22\placement-portal\backend
+set PYTHONPATH=e:\projects\placementportal\backend
 celery -A tasks beat --loglevel=info
 ```
 
