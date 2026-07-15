@@ -14,6 +14,6 @@ class Config:
     CELERY_RESULT_BACKEND = 'redis://localhost:6380/0'
     SMTP_HOST = os.environ.get('SMTP_HOST', 'sandbox.smtp.mailtrap.io')
     SMTP_PORT = os.environ.get('SMTP_PORT', '2525')
-    SMTP_USER = os.environ.get('SMTP_USER', '17bc14d667989f')
-    SMTP_PASS = os.environ.get('SMTP_PASS', '1745340e435289')
+    SMTP_USER = os.environ.get('SMTP_USER', 'a600b3683bf863')
+    SMTP_PASS = os.environ.get('SMTP_PASS', 'eae07880f1930e')
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@institute.edu')

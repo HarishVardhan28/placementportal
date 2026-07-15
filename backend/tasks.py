@@ -128,7 +128,7 @@ def send_google_chat_reminder():
 
     WEBHOOK_URL = os.environ.get(
         'GOOGLE_CHAT_WEBHOOK',
-        'https://chat.googleapis.com/v1/spaces/AAQAbRgTnUU/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=xiLT2koMmD_8aj2leMJilZLA38SRPVXQ3Sfm2IyxS_A'
+        'https://chat.googleapis.com/v1/spaces/AAQAW8czAbw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=jWhTz4XDJpdilSGPOacOXO5QkSfxPkMUk5sEEyCKUfY'
     )
 
     app = create_app()
